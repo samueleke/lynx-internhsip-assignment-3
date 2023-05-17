@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  assignment_3:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/home/node/assignment_III
+  #   links:
+  #     - db
+  # db:
+  #   image: mongo:6.0
+  #   volumes:
+  #     - ./src/data:/home/node/assignment_III/data
+  #   ports:
+  #     - "27016:27017"
+
